@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    height: 100vh;
+    background-image: url("img/fundo.png");
+    background-position: bottom left;
+    animation: disco 0.9s linear infinite;
+}
+
+img {
+    position: absolute;
+    left: 300px;
+    width: 300px;
+    bottom: 150px;
+}
+
+@keyframes disco {
+    from {
+        background-position: bottom right;
+    }
+    to {
+        background-position: bottom left
+    }
+    ;
+}
